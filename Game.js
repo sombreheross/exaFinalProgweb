@@ -6,16 +6,22 @@ class Game{
         this.countries = allCountriesShuffled;
         this.countryIndex = 0;
         this.isOver = this.isGameOver;
+        this.currentCountry = new Country(this.countries[this.countryIndex]);
     }
-    
+
     addScore(){
         score += 1;
     }
 
     isGameOver(){
         if (this.countryIndex > allCountriesShuffled.size()){
+            alert("Game Over!");
             return true;
         } return false;
+    }
+
+    nextCountry(){
+        
     }
 
 }

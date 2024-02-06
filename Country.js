@@ -10,8 +10,7 @@ class Country{
         const answerSet = new Set();
         console.log(this.flag);
         console.log(answers);
-        answers.forEach(translation => {
-            answerSet.push(translation.common);
+        answers.forEach((element) => {
         })
     }
 
@@ -19,6 +18,11 @@ class Country{
         document.querySelector("#flag").textContent = this.flag;
     }
 
+    checkAnswer(){
+        if (this.answers.has(userInput)){
+
+        }
+    }
 
 }
 
